@@ -4,8 +4,45 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-.page-container {
+/* .page-container {
     margin-top: 75px;
+} */
+#fab1 {
+  position: fixed;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -175%);
+  background-color: white;
+  color: white;
+  min-width: 3.5em;
+  min-height: 3.5em;
+  z-index: 999;
+}
+#fab2 {
+  position: fixed;
+  left: 35%;
+  top: 100%;
+  transform: translate(0, -225%);
+  background-color: white;
+  color: white;
+  min-width: 2em;
+  min-height: 2em;
+  z-index: 999;
+}
+#fab3 {
+  position: fixed;
+  right: 35%;
+  top: 100%;
+  transform: translate(0, -225%);
+  background-color: white;
+  color: white;
+  min-width: 2em;
+  min-height: 2em;
+  z-index: 999;
+}
+
+.material-icons{
+  color: black;
 }
 
 * {
@@ -14,12 +51,21 @@ body, html {
   
   .bg-image {
     /* Full height */
-    height: 50%;
+    height: 100%;
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+  }
+  
+  .logoImage{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 7em;
+    transform: translate(25%, 25%);
   }
   
   /* Images used */
@@ -32,17 +78,16 @@ body, html {
   
   /* Position text in the middle of the page/image */
   .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
     color: white;
+    border: 10px solid white;
     font-weight: bold;
-    font-size: 80px;
-    border: 10px solid #f1f1f1;
+    font-size: 3em;
     position: fixed; /* Stay fixed */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 999;
     width: 300px;
     padding: 20px;
     text-align: center;

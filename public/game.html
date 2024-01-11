@@ -14,7 +14,7 @@
 
 <body>
 
-  <!-- <div id="mainPage" class="container page-container"> -->]
+
     <button id="fab1" type="button" class="btn btn-info bmd-btn-fab" onclick="location.href = 'game.html';">
         <i class="material-icons">star</i>
     </button>
@@ -25,11 +25,30 @@
         <i class="material-icons">book</i>
     </button>
 
+
     <div class="gameText">Roll for advice!</div>
+    <image src="styles/Images/2dice.png" id="diceImage"></image>
+    <button id="rollButton" type="button" class="btn btn-dark" data-toggle="modal" data-target="#advice">Roll $10</button>
     <img src="styles/Images/stockLogo.png" class="logoImage"></img>
 
-
-  <!-- </div> -->
+    <div class="modal fade" id="advice" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tip #3</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>All gamblers quit right before their next big win!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
